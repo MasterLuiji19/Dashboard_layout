@@ -3,51 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <title>Dashboard modules</title>
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <main class="page">
-        <header class="head">
-            <nav class="head__navigation">
-                <ul class="menu">
-                    <li class="menu__item avatar"></li>
-                    <li class="menu__item dots"></li>
-                    <li class="menu__item board"></li>
-                    <li class="menu__item dots"></li>
-                    <li class="menu__item projects"></li>
-                    <li class="menu__item dots"></li>
-                    <li class="menu__item settings"></li>
-                </ul>
-                <ul class="menu-bottom">
-                    <li class="menu__item upgrade"></li>
-                    <li class="menu__item dots"></li>
-                    <li class="menu__item logout"></li>
-                </ul>
-            </nav>
-        </header>
-        <asaide class="wrap">
+    <header class="head" id="pageHeader">
+        <nav class="head__navigation">
+            <ul class="head-menu">
+                <li class="head-menu__item head-menu--avatar"><img src="./img/avatar.png" alt="avatar"></li>
+                <li class="head-menu__item head-menu--dots">...</li>
+                <li class="head-menu__item head-menu--board">
+                    <img class="head-menu__icon" src="./img/meter.svg" alt="meter">Board</li>
+                <li class="head-menu__item head-menu--dots">...</li>
+                <li class="head-menu__item head-menu--projects">
+                    <img src="./img/menu.svg" alt="menu">Projects</li>
+                <li class="head-menu__item head-menu--dots">...</li>
+                <li class="head-menu__item head-menu--settings"><img src="./img/cog.svg" alt="settings">Settings</li>
+            </ul>
+            <ul class="menu-bottom">
+                <li class="menu__item upgrade"></li>
+                <li class="menu__item dots"></li>
+                <li class="menu__item logout"></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="content" id="pageSection">
+        <aside class="header">
             <nav class="menu__navigator">
                 <ul class="nav-menu">
-                    <li class="menu__item update button"></li>
-                    <li class="menu__item breadcrumb"></li>
-                    <li class="menu__item status button"></li>
-                    <li class="menu__item chat"></li>
+                    <li class="nav-menu__item status button"></li>
+                    <li class="nav-menu__item breadcrumb"></li>
+                    <li class="nav-menu__item update button"></li>
+                    <li class="nav-menu__item chat"></li>
                 </ul>
             </nav>
-        </asaide>
-        <article class="tabs">
+        </aside>
+        <aside class="tabs">
             <nav class="tabs__menu">
-                <ul class="menu">
-                    <li class="menu__items active-projects"></li>
-                    <li class="menu__items messenger"></li>
-                    <li class="menu__items search"></li>
+                <ul class="tab-menu">
+                    <li class="tab-menu__items active-projects"></li>
+                    <li class="tab-menu__items messenger"></li>
+                    <li class="tab-menu__items search"></li>
                 </ul>
             </nav>
-            <article class="projects">
-                <head class="projects__head">
-                    <input type="text" class="head__search">
-                </head>
-            </article>
-        </article>
-    </main>
+        </aside>
+        <section class="active-projects">
+            <section class="projects">
+                <header class="projects__head">
+                    <input class="search" type="text">
+                    <button class="filter"></button>
+                    <button class="add"></button>
+                </header>
+                <article class="project">
+                    <span class="project__percent"></span>
+                    <p class="project__name"></p>
+                    <button class="project__update"></button>
+                    <button class="project__search"></button>
+                </article>
+                <article class="project">
+                    <span class="project__percent"></span>
+                    <p class="project__name"></p>
+                    <button class="project__update"></button>
+                    <button class="project__search"></button>
+                </article>
+                <article class="project">
+                    <span class="project__percent"></span>
+                    <p class="project__name"></p>
+                    <button class="project__update"></button>
+                    <button class="project__search"></button>
+                </article>
+                <article class="project">
+                    <span class="project__percent"></span>
+                    <p class="project__name"></p>
+                    <button class="project__update"></button>
+                    <button class="project__search"></button>
+                </article>
+                <article class="project">
+                    <span class="project__percent"></span>
+                    <p class="project__name"></p>
+                    <button class="project__update"></button>
+                    <button class="project__search"></button>
+                </article>
+                <article class="project">
+                    <span class="project__percent"></span>
+                    <p class="project__name"></p>
+                    <button class="project__update"></button>
+                    <button class="project__search"></button>
+                </article>
+                <article class="project">
+                    <span class="project__percent"></span>
+                    <p class="project__name"></p>
+                    <button class="project__update"></button>
+                    <button class="project__search"></button>
+                </article>
+                <article class="project">
+                    <span class="project__percent"></span>
+                    <p class="project__name"></p>
+                    <button class="project__update"></button>
+                    <button class="project__search"></button>
+                </article>
+                <article class="project">
+                    <span class="project__percent"></span>
+                    <p class="project__name"></p>
+                    <button class="project__update"></button>
+                    <button class="project__search"></button>
+                </article>
+            </section>
+        </section>
+    </section>
 </body>
 </html>
